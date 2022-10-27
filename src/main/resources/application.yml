@@ -1,0 +1,53 @@
+server:
+  port: ${random.int(1024,9999)}
+
+myconfig:
+  myport: ${server.port}
+
+# 管理员用户名
+name: liuwei
+
+
+# 学生1
+student1:
+  sex: female
+  age: 10
+  address: guangzhou
+
+# 学生2
+student2: {sex: female,age: 10,address: shanghai}
+
+# 城市
+city1:
+  - beijing
+  - shanghai
+  - guangzhou
+  - shenzhen
+
+city2: [beijing,shanghai,guangzhou,shenzhen]
+
+students:
+  - name: liuwei
+    age: 20
+    score: 100
+  - name: hanhan
+    age: 18
+    score: 88
+  - name: weiliang
+    age: 18
+    score: 101
+
+user1:
+  id: 1002
+  name: gfz
+  address:
+    - beijing
+    - shanghai
+    - guangzhou
+    - shenzhen
+  grades:
+    - subject: math
+      score: 100
+    - subject: english
+      score: 90
+
